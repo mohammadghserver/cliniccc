@@ -1,0 +1,2521 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,header,hgroup,menu,nav,section {
+  display: block;
+}
+:root{
+  scroll-behavior: smooth;
+ }
+a {
+  text-decoration: none !important;
+}
+
+@font-face {
+  font-family: IranianSans;
+  src: url('./fonts/Iranian\ Sans.ttf');
+}
+
+.FontAwesome-debug {
+  font-family: 'FontAwesome';
+}
+
+body {
+  line-height: 1;
+  direction: rtl;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.dv-welcom {
+  width: 100%;
+  height: 30px;
+  background-color: #d5d5d5;
+  text-align: center;
+  color: black;
+}
+
+#wrapper {
+  height: 488px;
+}
+
+.welcome-text {
+  font-size: 16px;
+  width: 366px;
+  margin: 0px auto;
+  padding-top: 5px;
+
+}
+
+.head {
+  width: 100%;
+  height: 41px;
+  border: 1px solid green;
+  display: flex;
+  background-color: whitesmoke;
+}
+
+.appointment-box {
+  width: 206px;
+  height: 40px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.appointment {
+  color: white;
+  font-size: 15px;
+  background-color: black;
+  margin-top: 10px;
+}
+
+.phone-box {
+  text-align: center;
+  width: 182px;
+  height: 40px;
+  display: flex;
+  background-color: #d5d5d5;
+}
+
+.phone-number {
+  color: #000;
+  background-color: #d5d5d5;
+  height: 23px;
+  font-size: 16px;
+  margin-top: 9px;
+  margin-right: 31px;
+  /* rgb(106, 191, 75) */
+}
+
+.phone-icon {
+  font-size: 14px;
+  padding-top: 14px;
+  padding-right: 7px;
+  color: #000;
+}
+
+.fBook-icon {
+  font-size: 20px;
+
+}
+
+.dvLogo {
+  width: 248px;
+  height: 27px;
+  margin-top: 6px;
+  margin-right: auto;
+  margin-left: 43px;
+}
+
+#logo {
+  width: 246px;
+}
+
+.main-nav {
+  position: relative;
+  background-color: #53bfff;
+  width: 100%;
+  height: 42px;
+}
+
+.nav-items {
+  width: 500px;
+  height: 41px;
+}
+
+.nav-item {
+  display: block;
+  float: right;
+  width: 100px;
+  text-align: center;
+}
+
+.nav-link {
+  border: 1px solid #000;
+  height: 41px;
+  transition: all .5s;
+  color: #fff;
+}
+
+.nav-link-2 {
+  border-left: 2px solid black;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.sub-item {
+  display: block;
+  float: right;
+  width: 94%;
+  text-align: left;
+  padding-top: 7px;
+}
+
+.sub-link {
+  margin-top: 9px;
+  padding-left: 12px;
+  text-decoration: none !important;
+  color: #000;
+}
+
+.invisalign-subMenu {
+  position: absolute;
+  display: none;
+  width: 198px;
+  border: 1px solid bisque;
+  height: 140px;
+  border-radius: 14px;
+}
+
+.services-subMenu {
+  position: absolute;
+  display: none;
+  width: 198px;
+  border: 1px solid bisque;
+  height: 140px;
+  border-radius: 14px;
+}
+
+.about-us-subMenu {
+  width: 199px;
+  display: none;
+  border: 1px solid bisque;
+  height: 107px;
+  position: absolute;
+  border-radius: 14px;
+
+}
+
+.sub-menu {
+  width: 199px;
+  background-color: whitesmoke;
+  height: 140px;
+  margin-right: -1px;
+  background-color: #ffe9b5;
+  border-radius: 14px;
+  border-left: 2px solid;
+}
+
+.sub-menu-2 {
+  width: 199px;
+  background-color: whitesmoke;
+  height: 107px;
+  margin-right: -1px;
+  background-color: #ffe9b5;
+  border-radius: 14px;
+  border-left: 2px solid;
+}
+
+.sort-down-icon {
+  font-size: 15px;
+  position: absolute;
+  margin-top: -29px;
+  margin-right: -46px;
+  color: wheat;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid #000;
+  color: #000;
+}
+
+.searchBox {
+  position: absolute;
+  top: 4px;
+  left: 210px;
+  width: 24%;
+  height: 33px;
+  z-index: 2;
+  border-radius: 4px;
+  border: 2px solid cadetblue;
+}
+
+.lblsearch {
+  position: absolute;
+  width: 17px;
+  z-index: 3;
+  margin-top: -49px;
+  margin-right: -250px;
+  height: 22px;
+}
+
+.search-icon {
+  font-size: 18px;
+  padding-top: 2px;
+  color: cornflowerblue;
+  background: #fff;
+  border: none;
+  margin-left: 24px;
+}
+
+.dental-logo-box {
+  width: 201px;
+  height: 153px;
+  margin-top: -42px;
+  position: absolute;
+  left: 0px;
+}
+
+.dental-logo {
+  width: 200px;
+  height: 153px;
+}
+
+.main-image-box {
+  width: 60%;
+  height: 300px;
+  float: right;
+  margin-top: 70px;
+}
+
+.main-image {
+  width: 100%;
+  height: 300px;
+  float: right;
+  border-top-left-radius: 40px;
+}
+
+.introduction-container {
+  width: 356px;
+  height: 306px;
+  border: 2px solid #87cade;
+  float: left;
+  margin-top: 76px;
+  margin-left: 17px;
+  border-top-right-radius: 20px;
+}
+
+.info-image {
+  margin-left: 7px;
+  width: 122px;
+  height: 126px;
+  margin-top: 16px;
+}
+
+.info-expertice {
+  color: #bc65db;
+  font-size: 12px;
+  padding-left: 19px;
+}
+
+.info-expertice-2 {
+  color: #bc65db;
+  font-size: 12px;
+  padding-left: 19px;
+}
+
+.reload {
+  border: 2px solid;
+  background-color: #004fc9;
+  color: #fff;
+  width: 66px;
+  height: 30px;
+  margin-right: 20px;
+  float: right;
+  margin-top: 4px;
+  font-size: 14px;
+  border-radius: 7px;
+  margin-bottom: -36px;
+}
+
+.introduction {
+  float: right;
+  width: 95%;
+  border: 2px solid;
+  height: 80vh;
+  padding-top: 1px;
+  height: 266px;
+  margin-top: 38px;
+  margin-right: 8px;
+  background-color: #f2ece0;
+}
+
+.Transparent-title {
+  font-size: 19px;
+  margin-top: 4px;
+  color: #2ba5aa;
+  margin-left: 11px;
+}
+
+.Transparent-description {
+  font-size: 13px;
+  margin-top: -12px;
+  width: 297px;
+  margin-right: 11px;
+}
+
+.insurance-title {
+  font-size: 19px;
+  color: #2ba5aa;
+  margin-left: 11px;
+  margin-top: -11px;
+}
+
+.insurance-description {
+  font-size: 13px;
+  margin-top: -17px;
+  width: 287px;
+  margin-right: 21px;
+}
+
+.main-description-box {
+  width: 59%;
+  height: 249px;
+  font-size: 12px;
+  display: inline-block;
+  float: right;
+}
+
+.main-description {
+  padding-top: 10px;
+}
+
+.doctor-name {
+  margin-top: 7px;
+  font-size: 16px;
+  color: #004fc9;
+  margin-left: 6px;
+  width: 116px;
+  height: 52px;
+  float: left;
+  text-align: center;
+}
+
+#first {
+  display: none;
+}
+
+#second {
+  display: none;
+}
+
+#third {
+  display: none;
+}
+
+.between-banner-container {
+  width: 100%;
+  background-color: #83cefb;
+  margin-top: 134px;
+  padding-top: 477px;
+}
+
+.between-banner {
+  width: 100%;
+  height: 268px;
+  background-color: #f3e3a6;
+  margin-top: -377px;
+  border: 2px solid;
+  padding-top: 203px;
+}
+
+.bold-title {
+  margin: -170px auto;
+  width: 553px;
+}
+
+.description-and-loading-wrapper {
+  width: 867px;
+  height: 180px;
+  margin: 193px auto;
+}
+
+.details {
+  width: 857px;
+  height: 120px;
+}
+
+.loading-wrapper {
+  width: 103px;
+  height: 35px;
+  margin-top: -13px;
+  margin-right: 74px;
+  border-radius: 8px;
+  border: 1px solid #069ae2;
+  background-color: #069ae2;
+  display: flex;
+}
+
+.loading {
+  color: #fff;
+  background-color: #069ae2;
+  height: 27px;
+  width: 101px;
+  border-radius: 8px;
+  border: 1px solid #069ae2;
+  margin-left: 8px;
+  margin-top: 3px;
+}
+
+.loading-icon {
+  display: inline-block;
+  width: 16px;
+  height: 34px;
+  color: white;
+  padding-top: 10px;
+  padding-left: 21px;
+
+
+}
+
+.specialists {
+  width: 100%;
+  height: 338px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 116px;
+}
+
+.specialists-2 {
+  width: 100%;
+  height: 338px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 116px;
+  display: none;
+}
+
+.specialist-introduction {
+  width: 26%;
+  height: 320px;
+}
+
+.specialists-image {
+  width: 210px;
+  height: 198px;
+  margin-left: 37px;
+}
+
+.specialist-short-descripton {
+  width: 100%;
+  height: 120px;
+  border: 1px solid;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: center;
+  background-color: black;
+}
+
+.name {
+
+  margin-top: 7px;
+  font-size: 19px;
+  color: #e4cb04;
+}
+
+.expertice {
+
+  font-size: 14px;
+  margin-top: -9px;
+  color: white;
+}
+
+.seeProfile {
+  scroll-behavior: smooth;
+  border-radius: 6px;
+  width: 100px;
+  background-color: cornsilk;
+  border: 1px solid black;
+  color: #000;
+  display: inline-block;
+  height: 32px;
+  text-align: center;
+}
+
+.seeProfile:hover {
+  background-color: #2f8bed;
+  color: white;
+  transition: all .4s;
+}
+
+.sliderAndDescriptionContainer {
+  width: 100%;
+  height: 800px;
+  margin-bottom: 30px;
+  margin-top: 160px;
+}
+
+.main-slider {
+  width: 445px;
+  height: 534px;
+  border: 1px solid;
+  margin-right: 50px;
+  background-color: #75a4fc;
+  border-top-left-radius: 55px;
+  border-bottom-right-radius: 55px;
+  margin-top: 94px;
+}
+
+.amazingslider-bottom-shadow-1 {
+  display: none !important;
+}
+
+.amazingslider-swipe-box-1 {
+  height: 479px !important;
+}
+
+
+.amazingslider-text-bg-1 {
+  display: none !important;
+}
+
+.amazingslider-title-1 {
+  display: none !important;
+}
+
+.amazingslider-timer-1 {
+  display: none !important;
+}
+
+.amazingslider-box-1 {
+  border: none !important;
+}
+
+.amazingslider-img-box-1 {
+  width: 93% !important;
+  height: 94% !important;
+  margin-left: -3px !important;
+}
+
+.description {
+  width: 35%;
+  height: 727px;
+  margin-left: 17px;
+  margin-top: -620px;
+  display: inline-block;
+  border: 1px solid;
+  border-top-right-radius: 50px;
+}
+
+.titleOfDescription {
+  color: #53c0b1;
+  width: 100%;
+  height: 100px;
+  font-size: 24px;
+  padding-left: 59px;
+  padding-top: 20px;
+}
+
+.main-desc-box {
+  width: 100%;
+  background: #5ed0f8;
+  color: #fff;
+  text-align: center;
+  height: 435px;
+}
+
+.desc-content {
+  padding-top: 18px;
+  text-align: left;
+  width: 340px;
+  margin-right: 15px;
+}
+
+.main-desc-box-2 {
+  background-color: #266980;
+  width: 100%;
+  text-align: center;
+  height: 138px;
+  margin-top: 26px;
+}
+
+.desc-content-2 {
+  color: wheat;
+  padding-top: 10px;
+  text-align: left;
+  width: 337px;
+  margin-right: 18px;
+}
+
+.dv-container {
+  background-image: linear-gradient(to right, #d2f9fb 21%, #ccd0f2 43%);
+  border: 1px solid #00b1f6;
+  width: 100%;
+  height: 300px;
+}
+
+.dv-container-description-box {
+  margin: 0px auto;
+  width: 90%;
+  height: 123px;
+}
+
+.bold-title-2 {
+  font-size: 26px;
+  margin: 32px auto;
+  width: 424px;
+}
+
+.details-2 {
+  width: 772px;
+  height: 120px;
+  margin: 40px auto;
+}
+
+@media (min-width: 992px) {
+  .amazingslider-slider-1 {
+    left: 22px !important;
+    top: 49px !important;
+    width: 100% !important;
+  }
+
+  .amazingslider-nav-container-1 {
+    margin-left: 16px !important;
+    margin-top: 28px !important;
+    margin-right: 0px !important;
+  }
+
+  .amazingslider-arrow-right-1 {
+    right: 40px !important;
+    top: 210px !important;
+  }
+
+  .amazingslider-arrow-left-1 {
+    left: 3px !important;
+    top: 210px !important;
+  }
+}
+
+
+@media (min-width: 1061px) {
+  .info {
+    width: 131px;
+    float: left;
+    height: 235px;
+  }
+
+  .main-description {
+    padding-top: 5px;
+  }
+
+  .info-expertice {
+    padding-left: 6px;
+    margin-top: -10px;
+  }
+
+  .info-expertice-2 {
+    padding-left: 23px;
+    margin-top: -10px;
+  }
+
+  .Invisalign:hover .invisalign-subMenu {
+    display: block;
+  }
+
+  .Services:hover .services-subMenu {
+    display: block;
+  }
+
+  .About-us:hover .about-us-subMenu {
+    display: block;
+  }
+
+  .invisalign-subMenu {
+    width: 181px;
+    height: 134px;
+  }
+
+  .services-subMenu {
+    width: 181px;
+    height: 134px;
+  }
+
+  .services-subMenu {
+    width: 181px;
+    height: 134px;
+  }
+
+  .about-us-subMenu {
+    width: 181px;
+    height: 103px;
+  }
+
+  .sub-menu {
+    width: 181px;
+    height: 133px;
+  }
+
+  .sub-menu-2 {
+    width: 181px;
+    height: 103px;
+  }
+
+  .sub-item {
+    width: 181px;
+    height: 29px;
+  }
+
+  .sub-link {
+    padding-left: 15px;
+    font-size: 14px;
+  }
+
+  .desc-content {
+    font-size: 15px;
+  }
+
+  .desc-content-2 {
+    font-size: 15px;
+  }
+
+}
+
+@media (min-width: 992px) and (max-width: 1060px) {
+  .info {
+    width: 131px;
+    float: left;
+    height: 235px;
+  }
+
+  .main-description {
+    padding-top: 5px;
+  }
+
+  .info-expertice {
+    padding-left: 6px;
+    margin-top: -10px;
+  }
+
+  .info-expertice-2 {
+    padding-left: 23px;
+    margin-top: -10px;
+  }
+
+  .Invisalign:hover .invisalign-subMenu {
+    display: block;
+  }
+
+  .Services:hover .services-subMenu {
+    display: block;
+  }
+
+  .About-us:hover .about-us-subMenu {
+    display: block;
+  }
+
+  .invisalign-subMenu {
+    width: 150px;
+    height: 133px;
+  }
+
+  .services-subMenu {
+    width: 150px;
+    height: 134px;
+  }
+
+  .about-us-subMenu {
+    width: 150px;
+    height: 103px;
+  }
+
+  .sub-menu {
+    width: 151px;
+    height: 133px;
+  }
+
+  .sub-menu-2 {
+    width: 151px;
+    height: 103px;
+  }
+
+  .sub-item {
+    width: 150px;
+    height: 29px;
+  }
+
+  .sub-link {
+    padding-left: 15px;
+    font-size: 13px;
+  }
+
+  .specialists-image {
+    width: 190px;
+    height: 184px;
+    margin-left: 41px;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .expertice {
+    font-size: 13px;
+  }
+
+  .bold-title {
+    width: 511px;
+    font-size: 26px;
+  }
+
+  .details {
+    font-size: 15px;
+  }
+
+  .amazingslider-slider-1 {
+    left: -44px;
+    top: 25px;
+    width: 100%;
+  }
+
+  .titleOfDescription {
+    font-size: 22px;
+    padding-left: 59px;
+    padding-top: 13px;
+  }
+
+  .description {
+    width: 348px;
+    height: 692px;
+  }
+
+  .main-desc-box {
+    height: 414px;
+    margin-top: -22px;
+  }
+
+  .desc-content {
+    padding-top: 9px;
+    width: 301px;
+    margin-right: 23px;
+    font-size: 14px;
+  }
+
+  .main-desc-box-2 {
+    height: 144px;
+  }
+
+  .desc-content-2 {
+    font-size: 14px;
+    width: 304px;
+    margin-right: 28px;
+  }
+
+  .bold-title-2 {
+    width: 407px;
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 830px) and (max-width: 991px) {
+  .welcome-text {
+    font-size: 15px;
+    padding-top: 6px;
+  }
+
+  .appointment-box {
+    width: 183px;
+  }
+
+  .appointment {
+    font-size: 14px;
+  }
+
+  .phone-box {
+    width: 170px;
+  }
+
+  .phone-number {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .dental-logo-box {
+    width: 188px;
+    height: 142px;
+  }
+
+  #logo {
+    width: 223px;
+    margin-top: 7px;
+  }
+
+  .main-image-box {
+    height: 285px;
+  }
+
+  .main-image {
+    height: 285px;
+
+  }
+
+  .dental-logo {
+    width: 177px;
+    height: 138px;
+  }
+
+  .searchBox {
+    position: absolute;
+    top: 4px;
+    left: 183px;
+    height: 33px;
+    z-index: 2;
+    border-radius: 8px;
+    border: 2px solid cadetblue;
+  }
+
+  .lblsearch {
+    margin-right: -220px;
+  }
+
+  .search-icon {
+    margin-left: 0px;
+  }
+
+  .nav-items {
+    width: 445px;
+    height: 41px;
+  }
+
+  .nav-item {
+    width: 89px;
+  }
+
+  .nav-link {
+    font-size: 13px;
+  }
+
+  .info {
+    width: 116px;
+    float: left;
+    height: 235px;
+  }
+
+  .main-description {
+    padding-top: 5px;
+  }
+
+  .info-image {
+    width: 110px;
+    height: 110px;
+  }
+
+  .info-expertice {
+    font-size: 10px;
+    padding-left: 9px;
+    margin-top: 0px;
+  }
+
+  .info-expertice-2 {
+    font-size: 10px;
+    padding-left: 28px;
+    margin-top: 0px;
+  }
+
+  .main-description-box {
+    width: 59%;
+    height: 261px;
+  }
+
+  .main-description {
+    padding-top: 5px;
+    height: 261px;
+    font-size: 11px;
+    width: 163px;
+  }
+
+  .Invisalign:hover .invisalign-subMenu {
+    display: block;
+  }
+
+  .Services:hover .services-subMenu {
+    display: block;
+  }
+
+  .About-us:hover .about-us-subMenu {
+    display: block;
+  }
+
+  .invisalign-subMenu {
+    width: 150px;
+    height: 133px;
+  }
+
+  .services-subMenu {
+    width: 150px;
+    height: 134px;
+  }
+
+  .about-us-subMenu {
+    width: 150px;
+    height: 103px;
+  }
+
+  .sub-menu {
+    width: 151px;
+    height: 133px;
+  }
+
+  .sub-menu-2 {
+    width: 151px;
+    height: 103px;
+  }
+
+  .sub-item {
+    width: 150px;
+    height: 29px;
+  }
+
+  .sub-link {
+    padding-left: 15px;
+    font-size: 11px;
+  }
+
+  .sort-down-icon {
+    margin-top: -32px;
+    margin-right: -41px;
+  }
+
+  .introduction-container {
+    width: 306px;
+    margin-top: 65px;
+    margin-left: 17px;
+  }
+
+  .Transparent-description {
+    font-size: 12px;
+    width: 261px;
+    margin-right: 11px;
+  }
+
+  .insurance-description {
+    font-size: 12px;
+    width: 251px;
+    margin-right: 21px;
+  }
+
+  .between-banner-container {
+    height: 400px;
+  }
+
+  .bold-title {
+    width: 472px;
+    font-size: 24px;
+  }
+
+  .description-and-loading-wrapper {
+    width: 703px;
+    height: 180px;
+    margin: 193px auto;
+  }
+
+  .between-banner-container {
+    height: 392px;
+    padding-top: 377px;
+  }
+
+  .between-banner {
+    width: 100%;
+    height: 268px;
+    background-color: #f3e3a6;
+    margin-top: -314px;
+    border: 2px solid;
+    padding-top: 203px;
+  }
+
+  .details {
+    font-size: 14px;
+    width: 583px;
+    margin: 10px auto;
+  }
+
+  .loading-wrapper {
+    width: 91px;
+    height: 30px;
+    margin-top: 11px;
+  }
+
+  .loading {
+    margin-top: 1px;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+
+  .loading-icon {
+    padding-top: 6px;
+  }
+
+  .description {
+    width: 348px;
+    height: 591px;
+    margin-left: 50px;
+  }
+
+  .titleOfDescription {
+    font-size: 19px;
+    padding-left: 31px;
+  }
+
+  .main-desc-box {
+    height: 354px;
+    margin-top: -36px;
+  }
+
+  .desc-content {
+    padding-top: 9px;
+    width: 301px;
+    margin-right: 23px;
+    font-size: 13px;
+  }
+
+  .main-desc-box-2 {
+    height: 123px;
+  }
+
+  .desc-content-2 {
+    font-size: 13px;
+    width: 304px;
+    margin-right: 28px;
+  }
+
+  .specialists-image {
+    width: 166px;
+    height: 159px;
+    margin-left: 38px;
+  }
+
+  .name {
+    font-size: 16px;
+  }
+
+  .expertice {
+    font-size: 12px;
+  }
+
+  .seeProfile {
+    width: 80px;
+    height: 29px;
+  }
+
+  .seeProfile>p {
+    font-size: 13px;
+  }
+
+  .sliderAndDescriptionContainer {
+    height: 600px;
+  }
+
+  .main-slider {
+    width: 363px;
+    height: 440px;
+    margin-top: 94px;
+  }
+
+  .amazingslider-slider-1 {
+    left: 0px !important;
+    top: 40px !important;
+    width: 91% !important;
+  }
+
+  .amazingslider-nav-container-1 {
+    margin-left: 14px !important;
+    margin-top: -62px !important;
+    margin-right: 0px !important;
+  }
+
+  .amazingslider-arrow-right-1 {
+    right: 31px !important;
+    top: 181px !important;
+  }
+
+  .amazingslider-arrow-left-1 {
+    left: 3px !important;
+    top: 181px !important;
+  }
+
+  .bold-title-2 {
+    width: 407px;
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 681px) and (max-width: 829px) {
+  .head {
+    height: 38px;
+  }
+
+  .welcome-text {
+    font-size: 14px;
+    padding-top: 7px;
+  }
+
+  .appointment-box {
+    width: 166px;
+  }
+
+  .appointment {
+    font-size: 12px;
+    margin-top: 13px;
+  }
+
+  .phone-box {
+    width: 157px;
+    height: 37px;
+  }
+
+  .phone-number {
+    font-size: 14px;
+    margin-top: 11px;
+    margin-right: 25px;
+  }
+
+  .phone-icon {
+    font-size: 12px;
+    padding-top: 16px;
+    padding-right: 7px;
+  }
+
+  #logo {
+    width: 200px;
+  }
+
+  .main-image-box {
+    height: 285px;
+    width: 57%;
+  }
+
+  .main-image {
+    height: 241px;
+    width: 100%;
+  }
+
+  .dental-logo-box {
+    width: 188px;
+    height: 142px;
+  }
+
+  .dental-logo {
+    width: 187px;
+    height: 140px;
+    margin-top: 6px;
+  }
+
+  .searchBox {
+    display: none;
+  }
+
+  .main-nav {
+    height: 36px;
+  }
+
+  .nav-items {
+    width: 455px;
+    height: 35px;
+  }
+
+  .nav-item {
+    width: 91px;
+    height: 35px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+    height: 35px;
+  }
+
+  .sort-down-icon {
+    display: none;
+  }
+
+  .search-icon {
+    position: absolute;
+    font-size: 16px;
+    color: #0246b1;
+    background: #d5d5d5;
+    top: -67px;
+    left: -225px;
+  }
+
+  .introduction-container {
+    width: 268px;
+    margin-top: 71px;
+    margin-left: 17px;
+  }
+
+  .reload {
+    width: 62px;
+    height: 28px;
+    font-size: 12px;
+  }
+
+  .info {
+    width: 99px;
+    float: left;
+    height: 235px;
+  }
+
+  .info-image {
+    width: 93px;
+    height: 89px;
+  }
+
+  .doctor-name {
+    margin-top: 14px;
+    font-size: 14px;
+    margin-left: 6px;
+    width: 91px;
+    height: 52px;
+  }
+
+  .main-description {
+    padding-top: 11px;
+    font-size: 10px;
+    width: 144px;
+  }
+
+  .info-expertice {
+    padding-left: 23px;
+    margin-top: 76px;
+    font-size: 9px;
+    height: 32px;
+    width: 116px;
+  }
+
+  .info-expertice-2 {
+    padding-left: 37px;
+    margin-top: 76px;
+    font-size: 9px;
+    height: 32px;
+    width: 116px;
+  }
+
+  .Transparent-title {
+    font-size: 16px;
+    margin-left: 6px;
+  }
+
+  .Transparent-description {
+    font-size: 11px;
+    width: 240px;
+    margin-right: 3px;
+    margin-top: -11px;
+  }
+
+  .insurance-title {
+    font-size: 16px;
+    margin-left: 7px;
+    margin-top: 2px;
+  }
+
+  .insurance-description {
+    font-size: 11px;
+    width: 230px;
+    margin-right: 12px;
+    margin-top: -13px;
+  }
+
+  .between-banner-container {
+    height: 400px;
+    margin-top: 55px;
+  }
+
+  .bold-title {
+    width: 413px;
+    font-size: 21px;
+    margin: -182px auto;
+  }
+
+  .description-and-loading-wrapper {
+    width: 530px;
+    height: 180px;
+    margin: 193px auto;
+  }
+
+  .between-banner-container {
+    height: 356px;
+    padding-top: 357px;
+    margin-top: 55px;
+  }
+
+  .between-banner {
+    width: 100%;
+    height: 231px;
+    margin-top: -297px;
+    padding-top: 203px;
+  }
+
+  .details {
+    font-size: 12px;
+    width: 501px;
+    margin: 10px;
+  }
+
+  .loading-wrapper {
+    width: 78px;
+    height: 30px;
+    margin-top: -13px;
+    margin-right: 10px;
+    border-radius: 11px;
+  }
+
+  .loading {
+    margin-top: 3px;
+    font-size: 12px;
+    margin-left: 14px;
+    margin-right: 5px;
+    height: 25px;
+  }
+
+  .loading-icon {
+    padding-top: 8px;
+    font-size: 13px;
+    margin-right: -10px;
+  }
+
+  .specialists-image {
+    width: 128px;
+    height: 132px;
+    margin-left: 35px;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+
+  .expertice {
+    font-size: 11px;
+  }
+
+  .seeProfile {
+    width: 68px;
+    height: 25px;
+  }
+
+  .seeProfile>p {
+    font-size: 11px;
+  }
+
+  .sliderAndDescriptionContainer {
+    width: 100%;
+    height: 633px;
+    margin-bottom: 30px;
+    margin-top: 77px;
+  }
+
+  .description {
+    width: 348px;
+    height: 591px;
+    margin-left: 50px;
+  }
+
+  .titleOfDescription {
+    font-size: 19px;
+    padding-left: 31px;
+  }
+
+  .main-desc-box {
+    height: 354px;
+    margin-top: -36px;
+  }
+
+  .desc-content {
+    padding-top: 9px;
+    width: 301px;
+    margin-right: 23px;
+    font-size: 13px;
+  }
+
+  .main-desc-box-2 {
+    height: 123px;
+  }
+
+  .desc-content-2 {
+    font-size: 13px;
+    width: 304px;
+    margin-right: 28px;
+  }
+
+  .main-slider {
+    width: 297px;
+    height: 378px;
+    margin-top: 81px;
+  }
+
+  .amazingslider-slider-1 {
+    left: 0px !important;
+    top: 40px !important;
+    width: 93% !important;
+  }
+
+  .amazingslider-nav-container-1 {
+    margin-left: 3px !important;
+    margin-top: -121px !important;
+    margin-right: 0px !important;
+
+  }
+
+  .amazingslider-arrow-right-1 {
+    right: 28px !important;
+    top: 160px !important;
+  }
+
+  .amazingslider-arrow-left-1 {
+    left: 3px !important;
+    top: 160px !important;
+  }
+
+  .description {
+    width: 278px;
+    height: 583px;
+    margin-top: -376px;
+  }
+
+  .titleOfDescription {
+    font-size: 17px;
+    padding-left: 15px;
+  }
+
+  .main-desc-box {
+    height: 355px;
+    margin-top: -37px;
+  }
+
+  .desc-content {
+    padding-top: 9px;
+    width: 258px;
+    margin-right: 9px;
+    font-size: 12px;
+  }
+
+  .main-desc-box-2 {
+    height: 116px;
+    width: 277px;
+  }
+
+  .desc-content-2 {
+    font-size: 12px;
+    width: 261px;
+    margin-right: 6px;
+  }
+
+  .dv-container {
+    height: 210px;
+    margin-top: 73px;
+  }
+
+  .bold-title-2 {
+    width: 342px;
+    font-size: 21px;
+  }
+
+  .details-2 {
+    width: 578px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 530px) and (max-width: 680px) {
+  .head {
+    height: 32px;
+  }
+
+  .welcome-text {
+    font-size: 12px;
+    padding-top: 8px;
+  }
+
+  .appointment-box {
+    width: 151px;
+    height: 32px;
+  }
+
+  .appointment {
+    font-size: 11px;
+    margin-top: 9px;
+  }
+
+  .phone-box {
+    width: 126px;
+    height: 31px;
+  }
+
+  .phone-number {
+    font-size: 12px;
+    margin-top: 9px;
+    margin-right: 15px;
+    height: 22px;
+  }
+
+  .phone-icon {
+    font-size: 11px;
+    padding-top: 12px;
+    padding-right: 7px;
+  }
+
+  .dvLogo {
+    width: 183px;
+    margin-left: 18px;
+    margin-top: 3px;
+  }
+
+  #logo {
+    width: 166px;
+    margin-right: 17px;
+  }
+
+  .main-image-box {
+    height: 220px;
+    width: 100%;
+    margin-top: 45px;
+  }
+
+  .main-image {
+    height: 220px;
+    width: 100%;
+    border-bottom-right-radius: 38px;
+  }
+
+  .dental-logo-box {
+    left: 84px;
+    top: 431px;
+  }
+
+  .dental-logo {
+    width: 184px;
+    height: 134px;
+    margin-top: 1px;
+  }
+
+  .searchBox {
+    display: none;
+  }
+
+  .search-icon {
+    position: absolute;
+    font-size: 14px;
+    color: #0246b1;
+    background: #d5d5d5;
+    top: -60px;
+    left: -235px;
+  }
+
+  .main-nav {
+    height: 36px;
+  }
+
+  .nav-items {
+    width: 455px;
+    height: 35px;
+  }
+
+  .nav-item {
+    width: 91px;
+    height: 35px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+    height: 35px;
+  }
+
+  .sort-down-icon {
+    margin-top: -27px;
+    margin-right: -41px;
+    font-size: 14px;
+  }
+
+  .introduction-container {
+    width: 268px;
+    margin-top: 131px;
+    margin-left: 102px;
+  }
+
+  .info {
+    width: 99px;
+    float: left;
+    height: 235px;
+  }
+
+  .info-image {
+    width: 93px;
+    height: 89px;
+  }
+
+  .doctor-name {
+    margin-top: 14px;
+    font-size: 14px;
+    margin-left: 6px;
+    width: 91px;
+    height: 52px;
+  }
+
+  .main-description {
+    padding-top: 11px;
+    font-size: 10px;
+    width: 144px;
+  }
+
+  .info-expertice {
+    padding-left: 23px;
+    margin-top: 76px;
+    font-size: 9px;
+    height: 32px;
+    width: 116px;
+  }
+
+  .info-expertice-2 {
+    padding-left: 37px;
+    margin-top: 76px;
+    font-size: 9px;
+    height: 32px;
+    width: 116px;
+  }
+
+  .reload {
+    width: 62px;
+    height: 28px;
+    font-size: 12px;
+  }
+
+  .Transparent-title {
+    font-size: 16px;
+    margin-left: 6px;
+  }
+
+  .Transparent-description {
+    font-size: 11px;
+    width: 240px;
+    margin-right: 3px;
+    margin-top: -11px;
+  }
+
+  .insurance-title {
+    font-size: 16px;
+    margin-left: 7px;
+    margin-top: 2px;
+  }
+
+  .insurance-description {
+    font-size: 11px;
+    width: 230px;
+    margin-right: 12px;
+    margin-top: -13px;
+  }
+
+  .description-and-loading-wrapper {
+    width: 530px;
+    height: 180px;
+    margin: 193px auto;
+  }
+
+  .between-banner-container {
+    height: 325px;
+    padding-top: 338px;
+    margin-top: 352px !important;
+  }
+
+  .between-banner {
+    height: 210px;
+    margin-top: -297px;
+    padding-top: 203px;
+  }
+
+  .bold-title {
+    width: 373px;
+    font-size: 19px;
+    margin: -182px auto;
+  }
+
+  .details {
+    font-size: 11px;
+    width: 464px;
+    margin-right: 23px;
+  }
+
+  .loading-wrapper {
+    width: 75px;
+    height: 28px;
+    margin-top: -24px;
+    margin-right: 24px;
+  }
+
+  .loading {
+    height: 0px;
+    width: 0px;
+    margin-right: 6px;
+    margin-top: 3px;
+    font-size: 11px;
+  }
+
+  .loading-icon {
+    padding-top: 7px;
+    padding-right: 41px;
+    font-size: 12px;
+  }
+
+  .specialists {
+    display: none;
+  }
+
+  .specialists-2 {
+    height: 454px;
+    margin: 69px auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .specialist-introduction {
+    margin-left: 57px;
+    margin-top: 14px;
+    height: 223px;
+  }
+
+  .name {
+    font-size: 14px;
+    margin-bottom: 13px;
+    margin-top: 0px;
+  }
+
+  .expertice {
+    font-size: 11px;
+    margin-top: -9px;
+    margin-bottom: 7px;
+  }
+
+  .seeProfile {
+    width: 68px;
+    height: 25px;
+  }
+
+  .seeProfile>p {
+    font-size: 11px;
+  }
+
+  .sliderAndDescriptionContainer {
+    width: 100%;
+    height: 1219px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+  }
+
+  .description {
+    width: 346px;
+    height: 542px;
+    margin: 20px auto;
+  }
+
+  .main-slider {
+    width: 346px;
+    height: 378px;
+    margin: 81px auto;
+  }
+
+  .amazingslider-slider-1 {
+    left: -5px !important;
+    top: 16px !important;
+    width: 89% !important;
+  }
+
+  .amazingslider-nav-container-1 {
+    margin-left: 3px !important;
+    margin-top: -121px !important;
+    margin-right: 0px !important;
+
+  }
+
+  .amazingslider-arrow-right-1 {
+    right: 28px !important;
+    top: 160px !important;
+  }
+
+  .amazingslider-arrow-left-1 {
+    left: 3px !important;
+    top: 160px !important;
+  }
+
+  .titleOfDescription {
+    font-size: 16px;
+    padding-left: 59px;
+  }
+
+  .main-desc-box {
+    height: 323px;
+    margin-top: -52px;
+  }
+
+  .desc-content {
+    padding-top: 9px;
+    width: 301px;
+    margin-right: 23px;
+    font-size: 12px;
+  }
+
+  .main-desc-box-2 {
+    height: 122px;
+  }
+
+  .desc-content-2 {
+    font-size: 13px;
+    width: 296px;
+    margin-right: 28px;
+  }
+
+  .dv-container {
+    height: 191px;
+  }
+
+  .bold-title-2 {
+    width: 310px;
+    font-size: 19px;
+    margin-top: 21px;
+  }
+
+  .details-2 {
+    width: 405px;
+    font-size: 11px;
+    margin-top: -14px;
+    height: 105px;
+  }
+}
+
+@media (min-width: 530px) and (max-width: 609px) {
+  .specialists-image {
+    width: 113px;
+    height: 114px;
+    margin-left: 41px;
+  }
+
+  .specialist-short-descripton {
+    height: 84px;
+  }
+}
+
+@media (min-width: 610px) and (max-width: 680px) {
+  .specialists-image {
+    width: 128px;
+    height: 132px;
+    margin-left: 47px;
+  }
+
+  .specialist-short-descripton {
+    height: 90px;
+  }
+
+}
+@media (min-width: 379px) and (max-width: 529px) {
+  .head {
+    height: 32px;
+  }
+
+  .welcome-text {
+    font-size: 10px;
+    padding-top: 10px;
+  }
+
+  .appointment-box {
+    display: none;
+  }
+
+  .phone-box {
+    width: 126px;
+    height: 31px;
+    background: #a4b2cc;
+  }
+
+  .phone-number {
+    font-size: 12px;
+    margin-top: 9px;
+    margin-right: 15px;
+    height: 22px;
+    background: #a4b2cc;
+    color: white;
+  }
+
+  .phone-icon {
+    font-size: 11px;
+    padding-top: 12px;
+    padding-right: 7px;
+  }
+
+  .searchBox {
+    display: none;
+  }
+
+  .search-icon {
+    position: absolute;
+    font-size: 13px;
+    color: #0246b1;
+    background: #d5d5d5;
+    top: -52px;
+    left: -235px;
+  }
+
+  .dvLogo {
+    width: 155px;
+    margin-left: 14px;
+    margin-top: 3px;
+  }
+
+  #logo {
+    width: 138px;
+    margin-right: 17px;
+  }
+
+  .main-image-box {
+    height: 220px;
+    width: 100%;
+    margin-top: 45px;
+  }
+
+  .main-image {
+    height: 220px;
+    width: 100%;
+    border-bottom-right-radius: 38px;
+  }
+
+  .dental-logo-box {
+    width: 150px;
+    height: 117px;
+    position: absolute;
+    top: 377px;
+    left: 21px;
+    margin-top: 0px;
+  }
+
+  .dental-logo {
+    width: 146px;
+    height: 114px;
+    margin-top: 1px;
+  }
+
+  .main-nav {
+    height: 29px;
+  }
+
+  .nav-items {
+    width: 365px;
+    height: 29px;
+  }
+
+  .nav-item {
+    width: 76px;
+    height: 29px;
+  }
+
+  .nav-link {
+    font-size: 10px;
+    height: 29px;
+  }
+
+  .sort-down-icon {
+    display: none;
+  }
+
+  .Invisalign {
+    display: none;
+  }
+
+  .introduction-container {
+    width: 268px;
+    margin-top: 110px;
+    margin-left: 35px;
+  }
+
+  .info {
+    width: 99px;
+    float: left;
+    height: 235px;
+  }
+
+  .info-image {
+    width: 93px;
+    height: 89px;
+  }
+
+  .doctor-name {
+    margin-top: 14px;
+    font-size: 14px;
+    margin-left: 6px;
+    width: 91px;
+    height: 52px;
+  }
+
+  .main-description {
+    padding-top: 11px;
+    font-size: 10px;
+    width: 144px;
+  }
+
+  .info-expertice {
+    padding-left: 23px;
+    margin-top: 76px;
+    font-size: 9px;
+    height: 32px;
+    width: 116px;
+  }
+
+  .info-expertice-2 {
+    padding-left: 37px;
+    margin-top: 76px;
+    font-size: 9px;
+    height: 32px;
+    width: 116px;
+  }
+
+  .reload {
+    width: 50px;
+    height: 26px;
+    font-size: 9px;
+  }
+
+  .Pricing {
+    height: 233px;
+  }
+
+  .Transparent-title {
+    font-size: 14px;
+    margin-left: 6px;
+    margin-top: 7px;
+  }
+
+  .Transparent-description {
+    font-size: 10px;
+    width: 233px;
+    margin-right: 2px;
+    margin-top: -11px;
+  }
+
+  .insurance-title {
+    font-size: 14px;
+    margin-left: 7px;
+    margin-top: 22px;
+  }
+
+  .insurance-description {
+    font-size: 10px;
+    width: 223px;
+    margin-right: 12px;
+    margin-top: -11px;
+  }
+
+  .description-and-loading-wrapper {
+    width: 373px;
+    height: 180px;
+    margin: 208px auto;
+  }
+
+  .between-banner-container {
+    height: 287px;
+    padding-top: 286px;
+    margin-top: 300px !important;
+  }
+
+  .between-banner {
+    height: 187px;
+    margin-top: -260px;
+    padding-top: 203px;
+  }
+
+  .bold-title {
+    width: 295px;
+    font-size: 15px;
+    margin: -193px auto;
+  }
+
+  .details {
+    font-size: 10px;
+    width: 365px;
+  }
+
+  .loading-wrapper {
+    width: 67px;
+    height: 25px;
+    margin-top: -15px;
+    margin-right: 24px;
+  }
+
+  .loading {
+    height: 0px;
+    width: 0px;
+    margin-right: 6px;
+    margin-top: 3px;
+    font-size: 9px;
+  }
+
+  .loading-icon {
+    padding-top: 6px;
+    padding-right: 34px;
+    font-size: 10px;
+  }
+
+  .specialists {
+    display: none;
+  }
+
+  .specialists-2 {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    height: 735px;
+  }
+
+  .specialists-image {
+    width: 113px;
+    height: 114px;
+    margin-left: 41px;
+  }
+
+  .specialist-introduction {
+    width: 51%;
+    height: 254px;
+  }
+
+  .name {
+    font-size: 12px;
+    margin-top: 2px;
+    margin-bottom: 4px;
+  }
+
+  .expertice {
+    font-size: 9px;
+    margin-top: 3px;
+    margin-bottom: 7px !important;
+  }
+
+  .seeProfile {
+    width: 64px;
+    height: 22px;
+    margin-bottom: 42px;
+  }
+
+  .seeProfile>p {
+    font-size: 10px;
+  }
+
+  .sliderAndDescriptionContainer {
+    width: 100%;
+    height: 530px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 42px auto;
+  }
+
+  .description {
+    width: 276px;
+    height: 507px;
+    margin: 20px auto;
+  }
+
+  .main-slider {
+    display: none;
+  }
+
+  .amazingslider-slider-1 {
+    left: 2px !important;
+    top: 33px !important;
+    width: 76% !important;
+  }
+
+  .amazingslider-nav-container-1 {
+    margin-left: 65px !important;
+    margin-top: -142px !important;
+    margin-right: 0px !important;
+  }
+
+  .amazingslider-arrow-right-1 {
+    right: 24px !important;
+    top: 142px !important;
+  }
+
+  .amazingslider-arrow-left-1 {
+    left: 0px !important;
+    top: 142px !important;
+  }
+
+  .titleOfDescription {
+    font-size: 15px;
+    padding-left: 20px;
+  }
+
+  .main-desc-box {
+    height: 323px;
+    margin-top: -52px;
+  }
+
+  .desc-content {
+    padding-top: 9px;
+    width: 265px;
+    margin-right: 9px;
+    font-size: 11px;
+  }
+
+  .main-desc-box-2 {
+    height: 103px;
+    margin-top: 13px;
+  }
+
+  .desc-content-2 {
+    font-size: 11px;
+    width: 244px;
+    margin-right: 21px;
+  }
+
+  .dv-container {
+    height: 151px;
+  }
+
+  .dv-container-description-box {
+    margin: 0px auto;
+    width: 349px;
+    height: 123px;
+  }
+
+  .bold-title-2 {
+    width: 244px;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .details-2 {
+    width: 336px;
+    font-size: 10px;
+    margin-top: -21px;
+    height: 105px;
+    margin-right: -4px;
+  }
+}
+
+@media (min-width: 379px) and (max-width: 449px) {
+  .specialists-image {
+    width: 108px;
+    height: 110px;
+    margin-left: 70px;
+  }
+
+  .specialist-short-descripton {
+    height: 90px;
+    width: 85% !important;
+  }
+
+}
+
+@media (min-width: 450px) and (max-width: 529px) {
+  .specialists-image {
+    width: 128px;
+    height: 132px;
+    margin-left: 76px;
+  }
+
+  .specialist-short-descripton {
+    height: 90px;
+    width: 90% !important;
+  }
+}

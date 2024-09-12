@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/fontawesome.css">
+    <link rel="stylesheet" href="Clinic.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"crossorigin="anonymous"></script>
+    <script src="sliderenginee/jquery.js"></script>
+    <script src="sliderenginee/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="sliderenginee/amazingslider-1.css">
+    <script src="sliderenginee/initslider-1.js"></script>
+    <script>
+        function showDefault() {
+            document.getElementById("pricing").style.display = "block"
+            document.getElementById("second").style.display = "none"
+            document.getElementById("third").style.display = "none"
+            document.getElementById("first").style.display = "none"
+        }
+        function showProfile1() {
+            document.getElementById("pricing").style.display = "none"
+            document.getElementById("second").style.display = "none"
+            document.getElementById("third").style.display = "none"
+            document.getElementById("first").style.display = "block"
+        }
+        function showProfile2() {
+            document.getElementById("pricing").style.display = "none"
+            document.getElementById("first").style.display = "none"
+            document.getElementById("third").style.display = "none"
+            document.getElementById("second").style.display = "block"
+        }
+        function showProfile3() {
+            document.getElementById("pricing").style.display = "none"
+            document.getElementById("first").style.display = "none"
+            document.getElementById("second").style.display = "none"
+            document.getElementById("third").style.display = "block"
+        }
+
+    </script>
+</head>
+
+<body>
+    <nav id="wrapper">
+        <div class="dv-welcom">
+            <h2 class="welcome-text">NOW WELCOME TO VILLAGE DENTAL CLINIC PAGE</h2>
+        </div>
+        <div class="head">
+            <div class="appointment-box">
+                <h1 class="appointment">REQUEST APPOINTMENT</h1>
+            </div>
+            <div class="phone-box">
+                <h1 class="phone-number">879-9018 (403)</h1>
+                <i class="fa-solid fa-phone FontAwesome-debug phone-icon"></i>
+            </div>
+            <div class="dvLogo">
+                <img src="https://www.villagedentaldtc.com/wp-content/uploads/2021/09/logo-village-dental-v3.svg" alt=""
+                    id="logo">
+            </div>
+        </div>
+        <div class="main-nav">
+            <ul class="nav-items">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Careers</a>
+                </li>
+                <li class="nav-item Invisalign">
+                    <a href="#" class="nav-link ">Invisalign</a>
+                    <i class="fa fa-sort-desc FontAwesome-debug sort-down-icon" aria-hidden="true"></i>
+                    <div class="invisalign-subMenu">
+                        <ul class="sub-menu">
+                            <li class="sub-item">
+                                <a href="#" class="sub-link">About Invisalign</a>
+                            </li>
+                            <li class="sub-item">
+                                <a href="#" class="sub-link">Smile assessment</a>
+                            </li>
+                            <li class="sub-item">
+                                <a href="#" class="sub-link">Invisalign FAQs</a>
+                            </li>
+                            <li class="sub-item">
+                                <a href="#" class="sub-link">Treatment Prosess</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item Services">
+                    <a href="#" class="nav-link">Services</a>
+                    <i class="fa fa-sort-desc FontAwesome-debug sort-down-icon" aria-hidden="true"></i>
+                    <div class="services-subMenu">
+                        <ul class="sub-menu">
+                            <li class="sub-item">
+                                <a href="#" class="sub-link"> General Dentistry</a>
+                            </li>
+                            <li class="sub-item">
+                                <a href="#" class="sub-link"> Cosmetic Services</a>
+                            </li>
+                            <li class="sub-item">
+                                <a href="#" class="sub-link"> Orthodontic Services</a>
+                            </li>
+                            <li class="sub-item">
+                                <a href="#" class="sub-link"> Sedation Services</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item About-us">
+                    <a href="#" class="nav-link nav-link-2">About Us</a>
+                    <i class="fa fa-sort-desc FontAwesome-debug sort-down-icon" aria-hidden="true"></i>
+                    <div class="about-us-subMenu">
+                        <ul class="sub-menu-2">
+                            <li class="sub-item">
+                                <a href="#" class="sub-link">Our Practice</a>
+                            </li>
+                            <li class="sub-item">
+                                <a href="#" class="sub-link">Meet The Dentists</a>
+                            </li>
+                            <li class="sub-item">
+                                <a href="#" class="sub-link">Meet The Team</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <label for="serachBox" class="lblsearch">
+                <label for="serachBox" class="fa-solid fa-magnifying-glass FontAwesome-debug search-icon"></label>
+            </label>
+            <input type="text" class="searchBox" id="searchBox">
+        </div>
+        <div class="dental-logo-box">
+            <img src="./clinicImages/13_40e4bce4132.png" alt="dental logo" class="dental-logo">
+        </div>
+        <div class="main-image-box">
+            <img src="./clinicImages/servizi.png" class="main-image" alt="">
+        </div>
+        <div class="introduction-container" id="introduction-container">
+            <button class="reload" onclick="showDefault()">Reload</button>
+            <div class="introduction" id="introduction">
+                <div class="Pricing" id="pricing">
+                    <p class="Transparent-title">Transparent Pricing
+                    </p>
+                    <p class="Transparent-description">Our team believes in accessible dental
+                        care. We offer
+                        straightforward pricing, clear estimates, and an unprecedented dental warranty. Keep up with
+                        your routine 6-month checkups and if something needs fixing, we’ll handle it at no cost to you
+                    </p>
+                    <p class="insurance-title">Insurance</p>
+                    <p class="insurance-description">Our office is in-network with Delta
+                        Premier and bills
+                        all other providers. Our team will explain how your specific dental benefits apply to the cost
+                        of treatment</p>
+                </div>
+                <div id="first" style="height: 249px;">
+                    <div class="main-description-box">
+                        <p class="main-description">Education: Graduated from University of Texas Austin in 1988.
+                            Graduated from University of Texas Dental School in San Antonio in 1992. Completed 2 years
+                            of continuing education in Orthodontics in 1998. Invisalign® training in 2002. Advanced
+                            Invisalign® training in 2009. Clear Correct training in 2009</br></br>
+
+                            Teaching: Orthodontic instructor for the Academy of Gp Orthodontics since 2000</p>
+                    </div>
+                    <div class="info">
+                        <img class="info-image" src="./clinicImages/cache_60890167.jpg" alt="">
+                        <h3 class="doctor-name">DR. Hermann Hinze</h3>
+                        <p class="info-expertice">Specialist Orthodontist</p>
+                    </div>
+                </div>
+                <div id="second" style="height: 249px;">
+                    <div class="main-description-box">
+                        <p class="main-description">Education: Graduated from Western Kentucky University with a
+                            Bachelor of Science degree in 1993, Completed an AEGD Residency through the US Army in 1998,
+                            Completed a Periodontal Residency in Augusta, Georgia through the US Army in 2005, American
+                            Board of Periodontology Board Certified in 2005</br></br>
+
+                            Dental Interest: Family and Cosmetic Dentistry</p>
+                    </div>
+                    <div class="info">
+                        <img class="info-image" src="./clinicImages/cache_60890168.jpg" alt="">
+                        <h3 class="doctor-name">DR. Jeffery Gerhardt</h3>
+                        <p class="info-expertice-2 ">General Dentist</p>
+                    </div>
+                </div>
+                <div id="third" style="height: 249px;">
+                    <div class="main-description-box">
+                        <p class="main-description">Education: Graduated from the University of Florida with degrees in
+                            Psychology and engineering sciences in 1996. Graduated from the University of Maryland
+                            Dental
+                            School in 2001, Completed a General Practice Residency at the Washington, DC VA
+                            hospital</br></br>
+
+                            Teaching: Head of the Periodontal Program for 2 years, AEGD program at Fort Hood, Texas from
+                            2006 to 2008</p>
+                    </div>
+                    <div class="info">
+                        <img class="info-image" src="./clinicImages/cache_60890169.jpg" alt="">
+                        <h3 class="doctor-name">Dr. Chyrel S. Salian</h3>
+                        <p class="info-expertice">Specialist Orthodontist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="between-banner-container">
+        <div class="between-banner">
+            <h3 class="bold-title">: Die Radiochirurgie - Hirntumore behandeln</h3>
+            <div class="description-and-loading-wrapper">
+            <p class="details">Die Behandlung von Hirntumoren (Neuroonkologie) stellt eine interdisziplinäre und
+                technische Herausforderung dar. Im Gamma Knife Zentrum Bochum wird dazu eine spezielle Form der
+                Strahlentherapie eingesetzt: Die Radiochirurgie. Das Gamma Knife Zentrum Bochum ist auf die Behandlung
+                von Hirntumoren (Neuroonkologie) spezialisiert. Die Behandlung erfordert die Zusammenarbeit der
+                medizinischen Fachrichtungen Neuroonkologie / Strahlentherapie / Neuroradiologie / Neurochirurgie</p>
+            <div class="loading-wrapper">
+                <p class="loading">..Loading</p>
+                <i class="fa-solid fa-arrows-rotate FontAwesome-debug loading-icon" id="loadingIcon"></i>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="specialists">
+        <div class="specialist-introduction">
+            <img src="./clinicImages/cache_60890169.jpg" class="specialists-image" alt="specialist">
+            <div class="specialist-short-descripton">
+                <p class="name">Dr. Chyrel S. Salian </p>
+                <p class="expertice">Specialist Orthodontist</p>
+                <a href="#introduction-container" class="seeProfile" onclick="showProfile3()">
+                    <p style="margin: 3px auto;">See Profile</p>
+                </a>
+            </div>
+        </div>
+        <div class="specialist-introduction">
+            <img src="./clinicImages/cache_60890168.jpg" class="specialists-image" alt="specialist">
+            <div class="specialist-short-descripton">
+                <p class="name">DR. Jeffery Gerhardt</p>
+                <p class="expertice">General Dentist</p>
+                <a href="#introduction-container" class="seeProfile" onclick="showProfile2()">
+                    <p style="margin: 3px auto;">See Profile</p>
+                </a>
+
+            </div>
+        </div>
+        <div class="specialist-introduction">
+            <img src="./clinicImages/cache_60890167.jpg" class="specialists-image" alt="specialist">
+            <div class="specialist-short-descripton">
+                <p class="name">DR. Hermann Hinze</p>
+                <p class="expertice">Specialist Orthodontist</p>
+                <a href="#introduction-container" class="seeProfile" onclick="showProfile1()">
+                    <p style="margin: 3px auto;">See Profile</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="specialists-2">
+        <div class="specialist-introduction">
+            <img src="./clinicImages/cache_60890167.jpg" class="specialists-image" alt="specialist">
+            <div class="specialist-short-descripton">
+                <p class="name">DR. Hermann Hinze</p>
+                <p class="expertice">Specialist Orthodontist</p>
+                <a href="#introduction-container" class="seeProfile" onclick="showProfile1()">
+                    <p style="margin: 3px auto;">See Profile</p>
+                </a>
+            </div>
+        </div>
+        <div class="specialist-introduction">
+            <img src="./clinicImages/cache_60890169.jpg" class="specialists-image" alt="specialist">
+            <div class="specialist-short-descripton">
+                <p class="name">Dr. Chyrel S. Salian </p>
+                <p class="expertice">Specialist Orthodontist</p>
+                <a href="#introduction-container" class="seeProfile" onclick="showProfile3()">
+                    <p style="margin: 3px auto;">See Profile</p>
+                </a>
+            </div>
+        </div>
+        <div class="specialist-introduction">
+            <img src="./clinicImages/cache_60890168.jpg" class="specialists-image" alt="specialist">
+            <div class="specialist-short-descripton">
+                <p class="name">DR. Jeffery Gerhardt</p>
+                <p class="expertice">General Dentist</p>
+                <a href="#introduction-container" class="seeProfile" onclick="showProfile2()">
+                    <p style="margin: 3px auto;">See Profile</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- /////// -->
+    <div class="sliderAndDescriptionContainer">
+        <div class="main-slider">
+            <div class="amazingslider-wrapper" id="amazingslider-wrapper-1"
+                style="display:block;position:relative;max-width:500px;margin:0px auto 6px;">
+                <div class="amazingslider" id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+                    <ul class="amazingslider-slides" style="display:none;">
+                        <li><img src="clinicImages/gallery2.png" alt="gallery2" title="gallery2" />
+                        </li>
+                        <li><img src="clinicImages/gallery1.png" alt="gallery1" title="gallery1" />
+                        </li>
+                        <li><img src="clinicImages/gallery3.png" alt="gallery3" title="gallery3" />
+                        </li>
+                    </ul>
+                    <ul class="amazingslider-thumbnails" style="display:none;">
+                        <li><img src="clinicImages/gallery2-tn.png" alt="gallery2" title="gallery2" /></li>
+                        <li><img src="clinicImages/gallery1-tn.png" alt="gallery1" title="gallery1" /></li>
+                        <li><img src="clinicImages/gallery3-tn.png" alt="gallery3" title="gallery3" /></li>
+                    </ul>
+                    <div class="amazingslider-engine"><a href="http://amazingslider.com"
+                            title="Responsive jQuery Content Slider">Responsive jQuery Content Slider</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="description">
+            <h1 class="titleOfDescription"> Great Smile Changes Everything</h1>
+            <div class="main-desc-box">
+                <p class="desc-content">
+                    Welcome to village Dental, your locally owned, patient-centered dental office in Kennesaw, GA,
+                    committed to the health and well-being of our patients. We take pride in fostering a supportive,
+                    dynamic, and passionate team culture that allows us to utilize our personalities and talents to
+                    deliver extraordinary care in a friendly environment. We’ll make sure you understand everything from
+                    treatment procedures to costs, so all you have to worry about is how to show off your new smile.
+
+                    As your local Kennesaw dental office, we’re proud to positively impact our community and improve our
+                    patients’ day-to-day lives by restoring optimal dental function, easing pain, and treating others by
+                    the golden rule. We also offer Spanish language assistance to help alleviate any potential barriers
+                    to optimal care. At our practice, you always come first.
+                </p>
+            </div>
+            <div class="main-desc-box-2">
+                <p class="desc-content-2">
+                    Our team believes in accessible dental care. We offer straightforward pricing, clear estimates, and
+                    an
+                    unprecedented dental warranty. Keep up with your routine 6-month checkups and if something needs
+                    fixing,
+                    we’ll handle it at no cost to you.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="dv-container">
+        <div class="dv-container-description-box">
+            <h3 class="bold-title-2"> : Mehr Erfolg durch enge Vernetzung </h3>
+            <p class="details-2">Die Ärzte des Gamma Knife Zentrums Bochum arbeiten eng mit den Fachkollegen der
+                Universitätskliniken für Neurologie und Neurochirurgie, des Instituts für Radiologie, Neuroradiologie
+                und Nuklearmedizin und des Onkologischen Zentrums des Knappschaftskrankenhauses Bochum sowie der Klinik
+                für Strahlentherapie und Radioonkologie des Marien Hospitals Herne / Universitätsklinikum der
+                Ruhr-Universität Bochum zusammen</p>
+        </div>
+    </div> 
+    <!-- ////// -->
+
+</body>
+
+</html>
